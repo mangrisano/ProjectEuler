@@ -18,4 +18,5 @@ def problem():
             res += number
     return res
 
-print(problem())
+if __name__ == '__main__':
+    print(problem())
