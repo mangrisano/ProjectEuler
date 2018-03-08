@@ -27,7 +27,7 @@ def problem(limit=100):
             if new_den == 0:
                 break
             if is_common:
-                if fractions == (new_num/new_den):
+                if fractions == (new_num / new_den):
                     prod *= Fraction(new_num, new_den)
 
     return prod.denominator
@@ -41,9 +41,7 @@ def deldigit(num, den):
             snum.remove(digit)
             sden.remove(digit)
             is_common = True
-    if is_common:
-        return is_common, int(snum[0]), int(sden[0])
-    return is_common, num, den
+    return is_common, int(snum[0]), int(sden[0])
 
 if __name__ == '__main__':
     print(problem())
