@@ -1,0 +1,24 @@
+# An irrational decimal fraction is created by concatenating the positive integers:
+#
+# 0.123456789101112131415161718192021…
+#
+# It can be seen that the 12th digit of the fractional part is 1.
+#
+# If dn represents the nth digit of the fractional part, find the value of
+# the following expression.
+#
+# d1 x d10 x d100 x d1000 x d10000 x d100000 x d1000000
+#
+# Answer: 210
+
+from functools import reduce
+def problem():
+    sdigit = ''
+    for digit in list(range(200000)):
+        sdigit += str(digit)
+    res = [int(sdigit[10**i]) for i in range(7)]
+
+    return reduce(lambda x, y: x * y, res)
+
+if __name__ == '__main__':
+    print(problem())
