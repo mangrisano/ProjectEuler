@@ -12,6 +12,7 @@
 # Answer: 210
 
 from functools import reduce
+
 def problem():
     sdigit = ''
     for digit in list(range(200000)):
