@@ -6,13 +6,13 @@
 # Answer: 233168
 
 
-# def problem(number):
-#     multiples = list()
-#     for i in range(number):
-#         if not (i % 3) or not (i % 5):
-#             multiples.append(i)
-#
-#     return sum(multiples)
+def problem(number):
+    multiples = list()
+    for i in range(number):
+        if not (i % 3) or not (i % 5):
+            multiples.append(i)
+
+    return sum(multiples)
 
 
 print(problem(1000))
