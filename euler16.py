@@ -9,4 +9,4 @@ def problem(number):
     result  = list(str(2**number))
     return sum([int(i) for i in result])
 
-print(problem(1000))
+print(problem(100))
