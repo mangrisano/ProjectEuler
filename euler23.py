@@ -42,4 +42,4 @@ def create_abundant_list(low_limit, high_limit):
     return [number for number in range(low_limit, high_limit) if is_abundant(number)]
 
 
-print(problem(1, 28123))
+print(problem(1, 29123))
