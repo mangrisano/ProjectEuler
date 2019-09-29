@@ -22,7 +22,7 @@ def problem():
     return number
 
 
-print problem()
+print(problem())
 
 
 
